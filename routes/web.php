@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', "PagesController@index");
+
+Route::get('/about', function () {
     return view('welcome');
 });
